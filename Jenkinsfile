@@ -58,7 +58,7 @@ pipeline {
                 }
         }
     
-         stage("Deploy") {
+         stage("Deployment") {
                 steps{
             
                     echo 'Accessing Namespace...'
