@@ -1,0 +1,82 @@
+/*
+# Why Choose Us Section
+--------------------------------------------------------------*/
+
+.why-us {
+    padding-bottom: 0;
+}
+
+.why-us .img-bg {
+    min-height: 500px;
+    background-size: cover;
+}
+
+.why-us .slides {
+    background: #f7f9fc;
+}
+
+.why-us h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #00008B;
+    font-family: var(--color-secondary);
+}
+
+.why-us h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00008B;
+    font-family: var(--font-secondary);
+}
+
+.why-us .swiper {
+    margin: 140px 140px 120px 140px;
+    overflow: hidden;
+}
+
+.why-us .swiper-button-prev:after,
+.why-us .swiper-button-next:after {
+    font-size: 24px;
+    color: var(--color-secondary);
+}
+
+.why-us .swiper-button-prev {
+    left: 80px;
+}
+
+.why-us .swiper-button-next {
+    right: 80px;
+}
+
+.why-us .swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+}
+
+.why-us .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--color-secondary);
+}
+
+.why-us .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+@media (max-width: 1200px) {
+    .why-us .swiper {
+        margin: 60px 60px 40px 60px;
+    }
+    .why-us .swiper-button-prev,
+    .why-us .swiper-button-next {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .why-us .swiper {
+        margin: 40px 40px 20px 40px;
+    }
+}
+
+.page-about .why-us {
+    padding: 0 0 80px 0;
+}

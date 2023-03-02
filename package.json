@@ -1,0 +1,66 @@
+{
+    "name": "wellness",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.10.0",
+        "@emotion/styled": "^11.10.0",
+        "@mui/icons-material": "^5.8.4",
+        "@mui/material": "^5.10.0",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@yozora/react-blockquote": "^2.0.0-alpha.4",
+        "aos": "^2.3.4",
+        "axios": "^0.27.2",
+        "bootstrap": "^5.2.0",
+        "css-vendor": "^2.0.8",
+        "glightbox": "^3.2.0",
+        "isotope": "^1.0.0-alpha.3",
+        "pigeon-maps": "^0.21.0",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.5.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.4.0",
+        "react-router-dom": "^6.3.0",
+        "react-scripts": "5.0.1",
+        "react-swipeable-views": "^0.14.0",
+        "swiper": "^8.3.2",
+        "tailwind": "^4.0.0",
+        "web-vitals": "^2.1.4",
+        "yarn": "^1.22.19"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.18.10",
+        "autoprefixer": "^10.4.8",
+        "babel-loader": "^8.2.5",
+        "postcss": "^8.4.16",
+        "tailwindcss": "^3.1.8",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
+    }
+}

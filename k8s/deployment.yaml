@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: wellness-front
+  namespace: wellness-front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wellness-front
+  template:
+    metadata:
+      labels:
+        app: wellness-front
+    spec:
+      containers:
+      - name: wellness-front
+        image: amdaziz/wellness-front
+        ports:
+        - containerPort: 80
