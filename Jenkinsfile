@@ -68,10 +68,10 @@ pipeline {
     
          stage("Deployment") {
                 steps{
+                  withCredentials([
+            string(credentialsId: 'mykubeconfig')
+            ]) 
             
-                 script {
-          kubernetesDeploy(configs: "deployment-and-service.yaml", kubeconfigId: "mykubeconfig")
-          }
 
                 }
         }
