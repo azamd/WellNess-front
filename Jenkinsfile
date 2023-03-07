@@ -38,7 +38,7 @@ pipeline {
                           echo "Building docker image"
                          //docker.build "amdaziz/wellness-front:latest" 
                          //Dockerfile wasn't included cause Dockerfile is in the same directory : .
-                         docker.build("${params.User_Name}/${params.Image_Name}:${params.Image_Tag}")
+                         docker.build("${params.User_Name}/${params.Image_Name}" + ":$BUILD_NUMBER")
                           echo "docker image successfully built."
 
                         }
@@ -51,7 +51,7 @@ pipeline {
                    
                      script {
                           
-                          def localImage = "${params.Image_Name}:${params.Image_Tag}"
+                          def localImage = "${params.Image_Name}" + ":$BUILD_NUMBER"
                           def repositoryName = "${params.User_Name}/${localImage}"
                  echo "Login to DockerHub."
                  docker.withRegistry("", "DockerHubCredentials") {

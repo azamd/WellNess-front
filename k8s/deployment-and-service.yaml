@@ -1,7 +1,14 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: wellness-ns
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wellness-front
+  namespace: wellness-ns
 spec:
   replicas: 2
   selector:
@@ -24,6 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: load-balancer
+  namespace: wellness-ns
   labels:
     app: wellness-front
 spec:
