@@ -72,7 +72,7 @@ pipeline {
                 withCredentials([file(credentialsId: 'mykubeconfig', variable: 'KUBECONFIG')]) 
                 {
             sh 'sed -i "s/<TAG>/${BUILD_NUMBER}/" k8s/deployment-and-service.yaml'
-            sh 'kubectl apply -f k8s/deployment-and-service.yaml'
+            sh 'minikube kubectl -- apply --filename k8s/deployment-and-service.yaml'
 
                 }
         }
