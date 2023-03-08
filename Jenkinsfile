@@ -66,12 +66,13 @@ pipeline {
                 }
         }
     
-         stage("Deployment") {
+         stage("Kube Deployment") {
                 steps{
-                  withCredentials([
-            string(credentialsId: 'mykubeconfig')
-            ]) 
-            
+
+                withCredentials([file(credentialsId: 'mykubeconfig', variable: 'KUBECONFIG')]) 
+                {
+            sh 'sed -i "s/<TAG>/${BUILD_NUMBER}/" k8s/deployment-and-service.yaml'
+            sh 'minikube kubectl -- apply -filename k8s/deployment-and-service.yaml'
 
                 }
         }

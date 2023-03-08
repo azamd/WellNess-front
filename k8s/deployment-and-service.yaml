@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: wellness-front
-        image: amdaziz/wellness-front
+        image: amdaziz/wellness-front:<TAG>
         ports:
         - containerPort: 80
 
